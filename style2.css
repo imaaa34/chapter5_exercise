@@ -5,38 +5,29 @@
 }
 
 h1 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  /*
-  １行で書き換え可能
   padding: 20px 0;
-  */
   text-align: center;
 }
 
-.nav-list {
+nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+ul {
+  text-align: center;
   padding: 15px 0;
-  /* text-align: center; */
-  /* こっちではダメ？ */
-  display: flex;
-  justify-content: center;
-  border-top: solid grey 1px;
-  border-bottom: solid grey 1px;
-  margin: 0 auto;
 }
 
-.nav-list-item {
-  list-style: none;
-  /*
-  見本はこっち
+li {
   display: inline-block;
-  */
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
-.main {
+main {
   width: 800px;
-  margin: 50px auto;
+  padding: 50px 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -114,10 +105,12 @@ h1 {
 }
 
 footer {
-  width: 100%;
-  height: 120px;
   background-color: grey;
+}
+
+.footer-text {
+  width: 100%;
+  line-height: 120px;
   color: white;
   text-align: center;
-  line-height: 120px;
 }
